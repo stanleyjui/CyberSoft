@@ -15,7 +15,6 @@ namespace CyberTestWeb.src
 {
 	/// <summary>
 	/// PAOREI001,續卡參數設定畫面
-    /// 2014/12/31 DB Log
 	/// </summary>
 	public partial class PAOREI001 : Cybersoft.Web.UI.LanguagePage
 	{
@@ -535,7 +534,7 @@ namespace CyberTestWeb.src
 					#endregion
 					//撤銷修改類的申請(刪除待放行資料)，處理完畢後重新進入明細頁面，跳出資料已刪除，請確認！
 					#region 判斷是否有刪除非INSERT資料
-					if (deleteRow_CNT > 0)
+					if (deleteRow_CNT > 0) 
 					{
 						//放行異動8
 						//判別若把所有待放行修改"全部刪除"時，將主要資料表狀態設定為原始值
