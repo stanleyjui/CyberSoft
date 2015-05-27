@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>FastReflectionLib</id>
+    <version>1.0.0.1</version>
+    <title>快速反射組件</title>
+    <authors>MicroSoft Open Source</authors>
+    <owners>MicroSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FastReflectionLib provide the same as part of the refection features like executing method dynamically but give simple and faster implementations. It can be use as the foundation of reflection-based scenarios such as ORM framework.</description>
+  </metadata>
+</package>

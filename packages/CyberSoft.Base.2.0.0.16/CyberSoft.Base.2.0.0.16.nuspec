@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.Base</id>
+    <version>2.0.0.16</version>
+    <title>CyberCArd 商業基礎元件</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供商業規則共用功能(給號、報表、計息、加解密、系統日期管理等)。</description>
+    <releaseNotes>Business process</releaseNotes>
+  </metadata>
+</package>

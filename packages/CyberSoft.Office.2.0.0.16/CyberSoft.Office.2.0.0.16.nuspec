@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.Office</id>
+    <version>2.0.0.16</version>
+    <title>CyberCArd Office Excel元件</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供Excel報表元件功能</description>
+    <releaseNotes>MicroSoft Excel api</releaseNotes>
+  </metadata>
+</package>

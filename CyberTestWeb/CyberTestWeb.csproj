@@ -1,0 +1,1448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8474963C-9DB1-4926-A24A-A32FC44DAC52}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CyberTestWeb</RootNamespace>
+    <AssemblyName>CyberTestWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\CyberCArd\dll\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.1.4\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="CARDWeb, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CyberCArd\dll\CARDWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Base">
+      <HintPath>..\packages\CyberSoft.Base.2.0.0.16\lib\Cybersoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Base.Core">
+      <HintPath>..\packages\CyberSoft.Base.2.0.0.16\lib\Cybersoft.Base.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Coca.Log, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\Cybersoft.Coca.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Dao.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Data.DAL.2.0.0.17\lib\Cybersoft.Dao.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Data, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.19\lib\Cybersoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Data.DAL, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Data.DAL.2.0.0.17\lib\Cybersoft.Data.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Language">
+      <HintPath>..\packages\Cybersoft.Language.2.0.0.16\lib\Cybersoft.Language.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Log, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\Cybersoft.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Web, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Cybersoft.Web.2.0.0.17\lib\Cybersoft.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReflectionLib">
+      <HintPath>..\packages\FastReflectionLib.1.0.0.1\lib\FastReflectionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.19\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextSharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\iTextSharp-LGPL.4.1.6\lib\iTextSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ApplicationServer.Caching.1.0.4632.2\lib\Microsoft.ApplicationServer.Caching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ApplicationServer.Caching.1.0.4632.2\lib\Microsoft.ApplicationServer.Caching.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsFabric.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ApplicationServer.Caching.1.0.4632.2\lib\Microsoft.WindowsFabric.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Data.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ApplicationServer.Caching.1.0.4632.2\lib\Microsoft.WindowsFabric.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="C:\CyberCArd\CARDWeb_Share\css\table.css">
+      <Link>CARD\css\table.css</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\css\Webcontrol.css">
+      <Link>CARD\css\Webcontrol.css</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\account_MO.png">
+      <Link>CARD\images\account_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\account_MU.png">
+      <Link>CARD\images\account_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\body_bg_repeat_y.jpg">
+      <Link>CARD\images\body_bg_repeat_y.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\bottom.png">
+      <Link>CARD\images\bottom.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_a.png">
+      <Link>CARD\images\btn_bg_a.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_b.png">
+      <Link>CARD\images\btn_bg_b.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_c.png">
+      <Link>CARD\images\btn_bg_c.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_d.png">
+      <Link>CARD\images\btn_bg_d.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_e.png">
+      <Link>CARD\images\btn_bg_e.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_f.png">
+      <Link>CARD\images\btn_bg_f.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_g.png">
+      <Link>CARD\images\btn_bg_g.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_h.png">
+      <Link>CARD\images\btn_bg_h.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_i.png">
+      <Link>CARD\images\btn_bg_i.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\btn_bg_j.png">
+      <Link>CARD\images\btn_bg_j.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\ca.ico">
+      <Link>CARD\images\ca.ico</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\calendar.png">
+      <Link>CARD\images\calendar.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\collapse.jpg">
+      <Link>CARD\images\collapse.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\CyberCArd%28card%29.png">
+      <Link>CARD\images\CyberCArd%28card%29.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\date_MO.png">
+      <Link>CARD\images\date_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\date_MU.png">
+      <Link>CARD\images\date_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\dc\RMB.png">
+      <Link>CARD\images\dc\RMB.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\dc\TWD.png">
+      <Link>CARD\images\dc\TWD.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\dc\USD.png">
+      <Link>CARD\images\dc\USD.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\dropdown_arrow.png">
+      <Link>CARD\images\dropdown_arrow.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Eraser_mo.png">
+      <Link>CARD\images\Eraser_mo.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Eraser_mu.png">
+      <Link>CARD\images\Eraser_mu.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Error.png">
+      <Link>CARD\images\Error.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\expand.jpg">
+      <Link>CARD\images\expand.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\favicon.ico">
+      <Link>CARD\images\favicon.ico</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\foot_bar_bg.png">
+      <Link>CARD\images\foot_bar_bg.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\information_MO.png">
+      <Link>CARD\images\information_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\information_MU.png">
+      <Link>CARD\images\information_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\info_content.png">
+      <Link>CARD\images\info_content.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\EXCEL.png">
+      <Link>CARD\images\itn\EXCEL.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAdjust%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnAdjust%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAdjust%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAdjust%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnAdjust%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAdjust.jpg">
+      <Link>CARD\images\itn\itnAdjust.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAllapprove%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnAllapprove%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAllapprove%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAllapprove%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnAllapprove%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAllapprove.jpg">
+      <Link>CARD\images\itn\itnAllapprove.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAnalysis%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnAnalysis%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAnalysis%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnAnalysis%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnAnalysis%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnAnalysis.jpg">
+      <Link>CARD\images\itn\itnAnalysis.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnapprove%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnapprove%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnapprove%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnapprove%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnapprove%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnapprove.jpg">
+      <Link>CARD\images\itn\itnapprove.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnArbitrationMemo.jpg">
+      <Link>CARD\images\itn\itnArbitrationMemo.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices%28en_US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnBillingNotices%28en_US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices%28en_US%29.jpg">
+      <Link>CARD\images\itn\itnBillingNotices%28en_US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnBillingNotices%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnBillingNotices%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnBillingNotices%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnBillingNotices.jpg">
+      <Link>CARD\images\itn\itnBillingNotices.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncancel%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel%28en-US%29.jpg">
+      <Link>CARD\images\itn\itncancel%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncancel%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncancel%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itncancel%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncancel.jpg">
+      <Link>CARD\images\itn\itncancel.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnCard%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnCard%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnCard%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnCard%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnCard%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnCard.jpg">
+      <Link>CARD\images\itn\itnCard.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnChargeBack%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnChargeBack%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnChargeBack%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnChargeBack%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnChargeBack%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnChargeBack.jpg">
+      <Link>CARD\images\itn\itnChargeBack.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnchargebackreply%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnchargebackreply%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnchargebackreply%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnchargebackreply%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnchargebackreply%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnchargebackreply.jpg">
+      <Link>CARD\images\itn\itnchargebackreply.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncheck%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck%28en-US%29.jpg">
+      <Link>CARD\images\itn\itncheck%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncheck%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncheck%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itncheck%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncheck.jpg">
+      <Link>CARD\images\itn\itncheck.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClean.png">
+      <Link>CARD\images\itn\itnClean.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnclear%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnclear%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnclear%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnclear%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnclear%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnclear.jpg">
+      <Link>CARD\images\itn\itnclear.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnClose%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnClose%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnClose%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnClose%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnClose%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnClose.jpg">
+      <Link>CARD\images\itn\itnClose.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnconfirm%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnconfirm%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnconfirm%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnconfirm%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnconfirm%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnconfirm.jpg">
+      <Link>CARD\images\itn\itnconfirm.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncontinue%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue%28en-US%29.jpg">
+      <Link>CARD\images\itn\itncontinue%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncontinue%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncontinue%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itncontinue%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncontinue.jpg">
+      <Link>CARD\images\itn\itncontinue.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncopy%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy%28en-US%29.jpg">
+      <Link>CARD\images\itn\itncopy%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncopy%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itncopy%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itncopy%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itncopy.jpg">
+      <Link>CARD\images\itn\itncopy.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndelete%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete%28en-US%29.jpg">
+      <Link>CARD\images\itn\itndelete%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndelete%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndelete%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itndelete%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndelete.jpg">
+      <Link>CARD\images\itn\itndelete.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndetail%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail%28en-US%29.jpg">
+      <Link>CARD\images\itn\itndetail%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndetail%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndetail%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itndetail%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndetail.jpg">
+      <Link>CARD\images\itn\itndetail.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnDispute%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnDispute%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnDispute%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnDispute%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnDispute%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnDispute.jpg">
+      <Link>CARD\images\itn\itnDispute.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndown%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndown%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndown.jpg">
+      <Link>CARD\images\itn\itndown.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownall%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndownall%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownall.jpg">
+      <Link>CARD\images\itn\itndownall.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndownload%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload%28en-US%29.jpg">
+      <Link>CARD\images\itn\itndownload%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndownload%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itndownload%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itndownload%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itndownload.jpg">
+      <Link>CARD\images\itn\itndownload.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnFee%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnFee%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnFee%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnFee%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnFee%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnFee.jpg">
+      <Link>CARD\images\itn\itnFee.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsert%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert%28en-US%29.jpg">
+      <Link>CARD\images\itn\itninsert%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsert%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsert%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itninsert%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsert.jpg">
+      <Link>CARD\images\itn\itninsert.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsertlist%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist%28en-US%29.jpg">
+      <Link>CARD\images\itn\itninsertlist%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsertlist%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itninsertlist%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itninsertlist%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itninsertlist.jpg">
+      <Link>CARD\images\itn\itninsertlist.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnInst%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnInst%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnInst%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnInst%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnInst%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnInst.jpg">
+      <Link>CARD\images\itn\itnInst.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnleft%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnleft%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnleft.jpg">
+      <Link>CARD\images\itn\itnleft.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnleftall%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnleftall%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnleftall.jpg">
+      <Link>CARD\images\itn\itnleftall.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnMessage%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnMessage%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnMessage%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnMessage%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnMessage%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnMessage.jpg">
+      <Link>CARD\images\itn\itnMessage.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnnbr%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnnbr%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnnbr%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnnbr%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnnbr%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnnbr.jpg">
+      <Link>CARD\images\itn\itnnbr.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnprint%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnprint%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnprint%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnprint%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnprint%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnprint.jpg">
+      <Link>CARD\images\itn\itnprint.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnquery%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnquery%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnquery%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnquery%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnquery%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnquery.jpg">
+      <Link>CARD\images\itn\itnquery.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReassign%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnReassign%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReassign%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReassign%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnReassign%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReassign.jpg">
+      <Link>CARD\images\itn\itnReassign.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnrecheck%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnrecheck%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnrecheck%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnrecheck%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnrecheck%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrecheck.jpg">
+      <Link>CARD\images\itn\itnrecheck.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReject%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnReject%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReject%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnReject%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnReject%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnReject.jpg">
+      <Link>CARD\images\itn\itnReject.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnRetrieval%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnRetrieval%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnRetrieval%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnRetrieval%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnRetrieval%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnRetrieval.jpg">
+      <Link>CARD\images\itn\itnRetrieval.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnretrievalreply%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnretrievalreply%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnretrievalreply%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnretrievalreply%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnretrievalreply%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnretrievalreply.jpg">
+      <Link>CARD\images\itn\itnretrievalreply.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnright%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnright%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnright.jpg">
+      <Link>CARD\images\itn\itnright.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrightall%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnrightall%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnrightall.jpg">
+      <Link>CARD\images\itn\itnrightall.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsave%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnsave%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsave%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsave%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnsave%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsave.jpg">
+      <Link>CARD\images\itn\itnsave.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsearch%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnsearch%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsearch%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnsearch%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnsearch%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch.jpg">
+      <Link>CARD\images\itn\itnsearch.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnsearch.png">
+      <Link>CARD\images\itn\itnsearch.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnterminate%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnterminate%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnterminate%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnterminate%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnterminate%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnterminate.jpg">
+      <Link>CARD\images\itn\itnterminate.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnTryCompute%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnTryCompute%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnTryCompute%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnTryCompute%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnTryCompute%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnTryCompute.jpg">
+      <Link>CARD\images\itn\itnTryCompute.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnup%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnup%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnup.jpg">
+      <Link>CARD\images\itn\itnup.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupall%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnupall%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupall.jpg">
+      <Link>CARD\images\itn\itnupall.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate%28en-US%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnupdate%28en-US%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate%28en-US%29.jpg">
+      <Link>CARD\images\itn\itnupdate%28en-US%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnupdate%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate%28zh-CN%29%28mouse%29.jpg">
+      <Link>CARD\images\itn\itnupdate%28zh-CN%29%28mouse%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate%28zh-CN%29.jpg">
+      <Link>CARD\images\itn\itnupdate%28zh-CN%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\itnupdate.jpg">
+      <Link>CARD\images\itn\itnupdate.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\PDF.png">
+      <Link>CARD\images\itn\PDF.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\itn\TXT.png">
+      <Link>CARD\images\itn\TXT.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Language.png">
+      <Link>CARD\images\Language.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\language_MO.png">
+      <Link>CARD\images\language_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\language_MU.png">
+      <Link>CARD\images\language_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\logo.png">
+      <Link>CARD\images\logo.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\logout_MO.png">
+      <Link>CARD\images\logout_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\logout_MU.png">
+      <Link>CARD\images\logout_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\main_menu_MO_extend.png">
+      <Link>CARD\images\main_menu_MO_extend.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\main_menu_MO_extend2.png">
+      <Link>CARD\images\main_menu_MO_extend2.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\message_E.png">
+      <Link>CARD\images\message_E.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\message_I.png">
+      <Link>CARD\images\message_I.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\message_MO.png">
+      <Link>CARD\images\message_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\message_MU.png">
+      <Link>CARD\images\message_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\message_S.png">
+      <Link>CARD\images\message_S.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\middle.png">
+      <Link>CARD\images\middle.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\options.png">
+      <Link>CARD\images\options.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\payment%28tcb%29.jpg">
+      <Link>CARD\images\payment%28tcb%29.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\payment.jpg">
+      <Link>CARD\images\payment.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Progress.gif">
+      <Link>CARD\images\Progress.gif</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\report.png">
+      <Link>CARD\images\report.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Search_mo.png">
+      <Link>CARD\images\Search_mo.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Search_mu.png">
+      <Link>CARD\images\Search_mu.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\sprite.png">
+      <Link>CARD\images\sprite.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\status_bg_MO.png">
+      <Link>CARD\images\status_bg_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\status_bg_MU.png">
+      <Link>CARD\images\status_bg_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\system_body_bg.png">
+      <Link>CARD\images\system_body_bg.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\tcb.png">
+      <Link>CARD\images\tcb.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\Time.png">
+      <Link>CARD\images\Time.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\top.png">
+      <Link>CARD\images\top.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\top_bar_bg.png">
+      <Link>CARD\images\top_bar_bg.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\top_bar_bg1.png">
+      <Link>CARD\images\top_bar_bg1.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\top_bar_bg_bk.png">
+      <Link>CARD\images\top_bar_bg_bk.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user.png">
+      <Link>CARD\images\user.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user01.png">
+      <Link>CARD\images\user01.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user02.png">
+      <Link>CARD\images\user02.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user03.png">
+      <Link>CARD\images\user03.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user04.png">
+      <Link>CARD\images\user04.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user05.png">
+      <Link>CARD\images\user05.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\user06.png">
+      <Link>CARD\images\user06.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\WM.jpg">
+      <Link>CARD\images\WM.jpg</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\work_list_MO.png">
+      <Link>CARD\images\work_list_MO.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\images\work_list_MU.png">
+      <Link>CARD\images\work_list_MU.png</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\clock.js">
+      <Link>CARD\js\clock.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\IE8.js">
+      <Link>CARD\js\IE8.js</Link>
+    </Content>
+    <None Include="C:\CyberCArd\CARDWeb_Share\js\jquery-2.1.1.intellisense.js">
+      <Link>CARD\js\jquery-2.1.1.intellisense.js</Link>
+    </None>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\jquery-2.1.1.js">
+      <Link>CARD\js\jquery-2.1.1.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\jquery-2.1.1.min.js">
+      <Link>CARD\js\jquery-2.1.1.min.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\jquery-ui-1.10.3.custom.min.js">
+      <Link>CARD\js\jquery-ui-1.10.3.custom.min.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\jquery.jqprint-0.3.js">
+      <Link>CARD\js\jquery.jqprint-0.3.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\SysUIChk.js">
+      <Link>CARD\js\SysUIChk.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\util.js">
+      <Link>CARD\js\util.js</Link>
+    </Content>
+    <Content Include="C:\CyberCArd\CARDWeb_Share\sounds\notify.wav">
+      <Link>CARD\sounds\notify.wav</Link>
+    </Content>
+    <Content Include="CARD\src\PAOREI001.aspx" />
+    <Content Include="CARD\src\test.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="C:\CyberCArd\CARDWeb_Share\js\jquery-2.1.1.min.map">
+      <Link>CARD\js\jquery-2.1.1.min.map</Link>
+    </Content>
+    <None Include="Properties\PublishProfiles\testWEB.pubxml" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="CARD\src\TPOTXN002.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CARD\src\initSignOn.cs" />
+    <Compile Include="CARD\src\PAOREI001.aspx.cs">
+      <DependentUpon>PAOREI001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARD\src\PAOREI001.aspx.designer.cs">
+      <DependentUpon>PAOREI001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARD\src\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARD\src\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CARD\src\TPOTXN002.aspx.cs">
+      <DependentUpon>TPOTXN002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARD\src\TPOTXN002.aspx.designer.cs">
+      <DependentUpon>TPOTXN002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57992</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57992/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="CopyLinkedContentFiles" BeforeTargets="Build">
+    <Copy SourceFiles="%(Content.Identity)" DestinationFiles="%(Content.Link)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" Condition="'%(Content.Link)' != ''" />
+  </Target>
+</Project>

@@ -1,0 +1,25 @@
+<TPWATER_STMTIN>
+  <REC_H>
+    <ITEM name='REC_TYPE_H'                  position='00001' rawdatalength='00005' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE_H'                   position='00006' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_CNT'                   position='00013' rawdatalength='00006' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_AMT'                   position='00019' rawdatalength='00010' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='MEMO'                        position='00029' rawdatalength='00015' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_H>
+  <REC>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00005' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CREATE_DTE'                  position='00006' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='WATER_NBR'                   position='00013' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SETTLE_DTE'                  position='00023' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_SEQ'                      position='00030' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='DIVISION_SEQ'                position='00031' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAGE_CODE'                   position='00032' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_ACCT_NBR'                position='00038' rawdatalength='00030' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_TERM'                    position='00068' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='POST_DTE'                    position='00076' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='RESP_DTE'                    position='00083' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_AMT'                      position='00090' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='DATA_TYPE'                   position='00098' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC>
+</TPWATER_STMTIN>
+

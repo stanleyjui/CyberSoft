@@ -1,0 +1,632 @@
+﻿/*無背景色，背景為浮水印*/
+table.tablestyle {
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+/*無背景色，背景為浮水印*/
+table.tablestyle1 {
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+/*有背景色，蓋過浮水印*/
+table.tablestyle2 {
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    background: #EFF4FB;
+    background: #F7F6F3;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+/*有背景色，蓋過浮水印*/
+table.tablestyle3 {
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    background: #EFF4FB;
+    background: #F7F6F3;
+}
+
+tr.trstyle {
+    height: 28px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_s {
+    height: 28px; /*框線控制 */
+    border-collapse: collapse;
+    border: 0px solid #686868;
+}
+
+tr.trstyle_2line {
+    height: 56px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_3line {
+    height: 84px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_4line {
+    height: 112px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_5line {
+    height: 140px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_6line {
+    height: 168px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_7line {
+    height: 196px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_7_1line {
+    height: 210px; /*框線控制 */
+    border-collapse: collapse;
+    border-bottom: 0px solid #686868;
+    border-top: 0px solid #686868;
+}
+
+tr.trstyle_m_tips {
+    background-color: #323333;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+td.tdhstyle_43_center {
+    background-color: #DCDCDC;
+    width: 43px;
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_80_center {
+    background-color: #DCDCDC;
+    width: 80px;
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle {
+    width: 140px;
+    background-color: #DCDCDC;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_left {
+    background-color: #DCDCDC;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_right {
+    background-color: #DCDCDC;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_center {
+    background-color: #DCDCDC;
+    width: 140px;
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle2 /* 底 */ {
+    width: 940px;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle3 /* 底 */ {
+    width: 500px;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle4 {
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdtstyle /* 底 */ {
+    width: 940px;
+    height: 50px;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+}
+
+td.tdtstyle2 /* 底 */ {
+    width: 300px;
+    height: 50px;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+}
+
+td.tdbstyle {
+    text-align: left;
+    vertical-align: middle;
+    width: 200px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+td.tdhstyle_60 {
+    background-color: #DCDCDC;
+    width: 60px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+td.tdhstyle_75 {
+    background-color: #DCDCDC;
+    width: 75px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_100 {
+    background-color: #DCDCDC;
+    width: 100px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+td.tdhstyle_120 {
+    background-color: #DCDCDC;
+    width: 120px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_130 {
+    background-color: #DCDCDC;
+    width: 130px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_170 {
+    background-color: #DCDCDC;
+    width: 170px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_200 {
+    background-color: #DCDCDC;
+    width: 200px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdhstyle_300 {
+    background-color: #DCDCDC;
+    width: 300px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+td.tdhstyle_350 {
+    background-color: #DCDCDC;
+    width: 350px;
+    vertical-align: middle; /*文字控制 */
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    color: #000000;
+}
+
+td.tdbstyle_80 {
+    text-align: left;
+    vertical-align: middle;
+    width: 80px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_100 {
+    text-align: left;
+    vertical-align: middle;
+    width: 100px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_120 {
+    text-align: left;
+    vertical-align: middle;
+    width: 120px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_130 {
+    text-align: left;
+    vertical-align: middle;
+    width: 130px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_160 {
+    text-align: left;
+    vertical-align: middle;
+    width: 160px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_200 {
+    text-align: left;
+    vertical-align: middle;
+    width: 200px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_250 {
+    text-align: left;
+    vertical-align: middle;
+    width: 250px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_340 {
+    text-align: left;
+    vertical-align: middle;
+    width: 340px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_400 {
+    text-align: left;
+    vertical-align: middle;
+    width: 400px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_600 {
+    text-align: left;
+    vertical-align: middle;
+    width: 600px; /*框線控制 */
+    border-collapse: collapse;
+    border-left: 0px solid #686868;
+    border-right: 0px solid #686868;
+    /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_h {
+    text-align: center;
+    vertical-align: middle;
+    width: 180px; /*框線控制 */
+    border-collapse: collapse;
+    border: 0px solid #686868;
+    background-color: black;
+    color: white;
+    /*文字控制 */
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+td.tdbstyle_d {
+    text-align: center;
+    vertical-align: middle;
+    width: 180px; /*框線控制 */
+    border-collapse: collapse;
+    border: 0px solid #686868;
+    /*文字控制 */
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+table.table_stmt_style {
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+tr.trh_stmt_style {
+    /*background-color: #336699; */
+    background-color: #666666;
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+tr.trb_stmt_style {
+    width: 120px;
+    height: 40px;
+    vertical-align: middle; /*文字控制 */
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: medium;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+tr.trb2_stmt_style {
+    height: 30px;
+    vertical-align: middle; /*文字控制 */
+    text-align: left;
+    font-family: 微軟正黑體;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+td.tdh_stmt_style {
+    border: 2px solid #999999;
+    border-collapse: collapse;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+td.tdb_stmt_style {
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+span.circle {
+    color: #85D0F4;
+    font-size: 20px;
+}
+
+div.frame {
+    background-color: #182332;
+    color: #E5EDF8;
+    padding: 0px 5px 5px 5px;
+}

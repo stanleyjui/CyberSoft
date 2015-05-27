@@ -1,0 +1,38 @@
+<GMGAS_STMTIN>
+  <REC_H>
+    <ITEM name='REC_TYPE_H'                  position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SEND_UNIT_H'                 position='00002' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='RECV_UNIT_H'                 position='00010' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TRANSFER_TYPE_H'             position='00018' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE_H'                   position='00021' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TYPE'                        position='00027' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_H'                    position='00028' rawdatalength='00093' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_H>
+  <REC>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SEND_UNIT'                   position='00002' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='RECV_UNIT'                   position='00010' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TRANSFER_CLASS'              position='00018' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE'                     position='00021' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_ACCT_NBR'                position='00027' rawdatalength='00014' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_AMT'                      position='00041' rawdatalength='00014' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BUSINESS_ID'                 position='00055' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='COND_CODE'                   position='00063' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='GAS_NBR'                     position='00065' rawdatalength='00011' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='WORK_CODE'                   position='00076' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_1'                    position='00080' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OPEN_YYMM'                   position='00088' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_2'                    position='00092' rawdatalength='00029' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC>
+  <REC_T>
+    <ITEM name='REC_TYPE_T'                  position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SEND_UNIT_T'                 position='00002' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='RECV_UNIT_T'                 position='00010' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TRANSFER_CLASS_T'            position='00018' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE_T'                   position='00021' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SUCCESS_AMT'                 position='00027' rawdatalength='00016' numeric='true'  scaler='02' signed='false' align='' dateformat=''                    />
+    <ITEM name='SUCCESS_CNT'                 position='00043' rawdatalength='00010' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_T'                    position='00053' rawdatalength='00068' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_T>
+</GMGAS_STMTIN>
+

@@ -1,0 +1,36 @@
+<PHONE_STMTIN>
+  <REC_H>
+    <ITEM name='CODE_H'                      position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TYPE'                        position='00002' rawdatalength='00002' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='REGISTERED_NBR'              position='00004' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BANK_ID'                     position='00012' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BRANCH_ID'                   position='00015' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TAX_ACCT_NBR'                position='00019' rawdatalength='00014' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE'                     position='00033' rawdatalength='00007' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_H>
+  <REC>
+    <ITEM name='CODE_D'                      position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ACCT_NBR'                    position='00002' rawdatalength='00016' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='AMOUNT'                      position='00018' rawdatalength='00009' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OFFICE_CODE'                 position='00027' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TELNO'                       position='00031' rawdatalength='00012' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CUST_ID'                     position='00043' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ACCOUNT_NO_ID'               position='00053' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OFFICE_CODE_OLD'             position='00054' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TELNO_OLD'                   position='00058' rawdatalength='00012' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_D1'                   position='00070' rawdatalength='00011' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ID_OLD'                      position='00081' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_ID'                     position='00082' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_DTE'                    position='00084' rawdatalength='00005' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CHKDGT'                      position='00089' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAYDATE'                     position='00091' rawdatalength='00004' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CUSTER-NO'                   position='00095' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ADMINIS_OFFICE'              position='00098' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC>
+  <REC_T>
+    <ITEM name='CODE_T'                      position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_AMT'                   position='00002' rawdatalength='00013' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_CNT'                   position='00015' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_T>
+</PHONE_STMTIN>
+

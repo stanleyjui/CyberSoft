@@ -1,0 +1,26 @@
+<ACH_STMTIN>
+  <REC>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_TYPE'                     position='00002' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_ID'                       position='00004' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_SEQ'                      position='00007' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PBANK'                       position='00013' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PCLNO'                       position='00020' rawdatalength='00014' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='RBANK'                       position='00034' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_ACCT_NBR'                position='00041' rawdatalength='00014' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TX_AMT'                      position='00055' rawdatalength='00010' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='REJECT_CODE'                 position='00065' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SCHD'                        position='00067' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CID'                         position='00068' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PID'                         position='00078' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SID'                         position='00088' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PDATE'                       position='00094' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PSEQ'                        position='00102' rawdatalength='00006' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PSCHD'                       position='00108' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='USER_NBR'                    position='00109' rawdatalength='00020' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='NOTE'                        position='00129' rawdatalength='00020' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='MEMO'                        position='00149' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER'                      position='00159' rawdatalength='00008' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC>
+</ACH_STMTIN>
+

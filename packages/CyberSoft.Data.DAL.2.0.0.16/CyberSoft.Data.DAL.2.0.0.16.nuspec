@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.Data.DAL</id>
+    <version>2.0.0.16</version>
+    <title>CyberCArd DAO Library</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供資料存取物件功能
+(DAO Library)</description>
+    <releaseNotes>Data Base access</releaseNotes>
+  </metadata>
+</package>

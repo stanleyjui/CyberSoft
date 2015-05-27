@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E99FA893-3089-4C41-A4E3-7F3926BBDEA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CyberTest.Biz.Cust</RootNamespace>
+    <AssemblyName>CyberTest.Biz.Cust</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cybersoft.Base, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Base.2.0.0.16\lib\Cybersoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Base.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Base.2.0.0.16\lib\Cybersoft.Base.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Coca.Log, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\Cybersoft.Coca.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Dao.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Data.DAL.2.0.0.16\lib\Cybersoft.Dao.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.16\lib\Cybersoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Data.DAL, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Data.DAL.2.0.0.16\lib\Cybersoft.Data.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Log, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\Cybersoft.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Cybersoft.Office, Version=2.0.5581.29542, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CyberSoft.Office.2.0.0.16\lib\Cybersoft.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.16\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\CyberSoft.log.2.0.0.17\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Office.2.0.0.16\lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Office.2.0.0.16\lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Office.2.0.0.16\lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\CyberSoft.Office.2.0.0.16\lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PB\PBBAHC001.cs" />
+    <Compile Include="PB\PBBAHI001.cs" />
+    <Compile Include="PB\PBBAHO001.cs" />
+    <Compile Include="PB\PBBAHR001.cs" />
+    <Compile Include="PB\PBBAHR002.cs" />
+    <Compile Include="PB\PBBAUP003.cs" />
+    <Compile Include="PB\PBBAUP004.cs" />
+    <Compile Include="PB\PBBAUP005.cs" />
+    <Compile Include="PB\PBBCHK001.cs" />
+    <Compile Include="PB\PBBCHK002.cs" />
+    <Compile Include="PB\PBBCHK003.cs" />
+    <Compile Include="PB\PBBELC001.cs" />
+    <Compile Include="PB\PBBELI001.cs" />
+    <Compile Include="PB\PBBELI002.cs" />
+    <Compile Include="PB\PBBELO001.cs" />
+    <Compile Include="PB\PBBELO002.cs" />
+    <Compile Include="PB\PBBELR001.cs" />
+    <Compile Include="PB\PBBELR002.cs" />
+    <Compile Include="PB\PBBELR003.cs" />
+    <Compile Include="PB\PBBFIC001.cs" />
+    <Compile Include="PB\PBBFIC002.cs" />
+    <Compile Include="PB\PBBFII001.cs" />
+    <Compile Include="PB\PBBFIO001.cs" />
+    <Compile Include="PB\PBBFIR001.cs" />
+    <Compile Include="PB\PBBGDT001.cs" />
+    <Compile Include="PB\PBBGMC001.cs" />
+    <Compile Include="PB\PBBGSI001.cs" />
+    <Compile Include="PB\PBBGSO001.cs" />
+    <Compile Include="PB\PBBGSR001.cs" />
+    <Compile Include="PB\PBBMBS001.cs" />
+    <Compile Include="PB\PBBMBS002.cs" />
+    <Compile Include="PB\PBBMEG001.cs" />
+    <Compile Include="PB\PBBFIO002.cs" />
+    <Compile Include="PB\PBBMNT001.cs" />
+    <Compile Include="PB\PBBPHC001.cs" />
+    <Compile Include="PB\PBBPHC002.cs" />
+    <Compile Include="PB\PBBPHI001.cs" />
+    <Compile Include="PB\PBBPHO001.cs" />
+    <Compile Include="PB\PBBPHR001.cs" />
+    <Compile Include="PB\PBBPKI001.cs" />
+    <Compile Include="PB\PBBPKI002.cs" />
+    <Compile Include="PB\PBBPKO001.cs" />
+    <Compile Include="PB\PBBPKO002.cs" />
+    <Compile Include="PB\PBBPWC001.cs" />
+    <Compile Include="PB\PBBPWI001.cs" />
+    <Compile Include="PB\PBBPWO001.cs" />
+    <Compile Include="PB\PBBPWR001.cs" />
+    <Compile Include="PB\PBBSGC001.cs" />
+    <Compile Include="PB\PBBSUM001.cs" />
+    <Compile Include="PB\PBBTWC001.cs" />
+    <Compile Include="PB\PBBTWI001.cs" />
+    <Compile Include="PB\PBBTWO001.cs" />
+    <Compile Include="PB\PBBTWR001.cs" />
+    <Compile Include="PB\PBBYMC001.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CyberCArd\Batch\CARDBATCH.application" />
+    <None Include="CyberCArd\Batch\CARDBATCH.exe.config" />
+    <None Include="CyberCArd\Batch\CARDBATCH.exe.manifest" />
+    <None Include="CyberCArd\Batch\CARDBATCH.vshost.exe.config" />
+    <None Include="CyberCArd\Batch\Config\Cybersoft.Log.config" />
+    <None Include="CyberCArd\report\template\PBRACH001.xls" />
+    <None Include="CyberCArd\report\template\PBRAHR001.xls" />
+    <None Include="CyberCArd\report\template\PBRCAR001.xls" />
+    <None Include="CyberCArd\report\template\PBRELO001.xls" />
+    <None Include="CyberCArd\report\template\PBRELO002.xls" />
+    <None Include="CyberCArd\report\template\PBRGAS001.xls" />
+    <None Include="CyberCArd\report\template\PBRPHO001.xls" />
+    <None Include="CyberCArd\report\template\PBRPHR001.xls" />
+    <None Include="CyberCArd\report\template\PBRPWO001.xls" />
+    <None Include="CyberCArd\report\template\PBRPWR001.xls" />
+    <None Include="CyberCArd\report\template\PBRSUM001.xls" />
+    <None Include="CyberCArd\report\template\PBRTWO001.xls" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CyberCArd\Batch\CARDBATCH.exe" />
+    <Content Include="CyberCArd\Batch\CARDBATCH.pdb" />
+    <Content Include="CyberCArd\Batch\CARDBATCH.vshost.exe" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Base.Core.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Base.Core.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Base.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Base.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.Cust.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.Cust.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.Optional.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.Optional.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Biz.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Coca.Log.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Coca.Log.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Cola.Common.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Cola.QueueClassLibrary.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Cola.Type.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Dao.Core.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Dao.Core.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Data.DAL.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Data.DAL.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Data.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Data.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Language.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Language.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Log.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Log.pdb" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Office.dll" />
+    <Content Include="CyberCArd\Batch\Cybersoft.Office.pdb" />
+    <Content Include="CyberCArd\Batch\HSMClientApiLibrary.dll" />
+    <Content Include="CyberCArd\Batch\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="CyberCArd\Batch\log4net.dll" />
+    <Content Include="CyberCArd\Batch\NLog.dll" />
+    <Content Include="CyberCArd\Batch\NPOI.dll" />
+    <Content Include="CyberCArd\Batch\NPOI.OOXML.dll" />
+    <Content Include="CyberCArd\Batch\NPOI.OpenXml4Net.dll" />
+    <Content Include="CyberCArd\Batch\NPOI.OpenXmlFormats.dll" />
+    <Content Include="CyberCArd\xml\File.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_ACH.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_ELECT.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_GMGAS.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_PARKING.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_PHONE.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_SGGAS.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_TPWATER.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_TWWATER.xml" />
+    <Content Include="CyberCArd\xml\PUBLIC_YMGAS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CyberTest.Dal.Cust\CyberTest.DAL.Cust.csproj">
+      <Project>{95180120-33bf-45f0-b0d8-31f09914a9e6}</Project>
+      <Name>CyberTest.DAL.Cust</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy  "$(TargetDir)*.pdb"  C:\CyberCArd\Batch /s /i /y
+xcopy  "$(TargetDir)*.dll"  C:\CyberCArd\Batch /s /i /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

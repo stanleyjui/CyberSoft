@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.Data.DAL</id>
+    <version>2.0.0.17</version>
+    <title>CyberCArd DAO Library</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <licenseUrl>http://www.cybersoft4u.com/contact_view.asp</licenseUrl>
+    <projectUrl>http://www.cybersoft4u.com/product_view.asp?psclass=5</projectUrl>
+    <iconUrl>http://www.cybersoft4u.com/imgs/adv/201505190057381.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供資料存取物件功能
+(DAO Library)</description>
+    <releaseNotes>2.0.0.17</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="CyberSoft.Data" version="2.0.0.19" />
+        <dependency id="FastReflectionLib" version="1.0.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

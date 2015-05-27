@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.Data</id>
+    <version>2.0.0.19</version>
+    <title>CyberCArd資料存取基礎元件</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供資料庫存取、整批寫入、txt格式化、難字轉換及快取等功能。</description>
+    <releaseNotes>Data access</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="ICSharpCode.SharpZipLib.dll" version="0.85.4.369" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime.Caching" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

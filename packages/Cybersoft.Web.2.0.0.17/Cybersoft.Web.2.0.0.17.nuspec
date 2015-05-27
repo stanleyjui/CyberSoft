@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Cybersoft.Web</id>
+    <version>2.0.0.17</version>
+    <title>CyberCArd 網站服務基礎元件</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>提供網站多國語系資源基礎功能
+提供網站共用邏輯服務功能</description>
+  </metadata>
+</package>

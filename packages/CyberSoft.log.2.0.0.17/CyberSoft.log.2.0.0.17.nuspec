@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CyberSoft.log</id>
+    <version>2.0.0.17</version>
+    <title>CyberCArd log基礎及實作層元件</title>
+    <authors>StanleyJui</authors>
+    <owners>CyberSoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>My package description.</description>
+    <summary>log基礎Log.dll
+log實作Coca.Log.dll</summary>
+  </metadata>
+</package>

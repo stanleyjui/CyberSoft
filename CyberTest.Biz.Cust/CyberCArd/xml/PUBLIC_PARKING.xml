@@ -1,0 +1,68 @@
+<PARKING_STMTIN>
+  <REC_H>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TYPE'                        position='00002' rawdatalength='00002' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CUSTER_NO'                   position='00004' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BANK_ID'                     position='00012' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BANK_SUB_ID'                 position='00015' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TAX_NO'                      position='00019' rawdatalength='00014' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_DTE'                     position='00033' rawdatalength='00007' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER'                      position='00040' rawdatalength='00091' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_H>
+  <REC>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CARD_NBR'                    position='00002' rawdatalength='00016' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='AMOUNT'                      position='00018' rawdatalength='00009' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OFFICE_CODE'                 position='00027' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TELNO'                       position='00031' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='IDCARD'                      position='00041' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_1'                    position='00051' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OFFICE_CODE_OLD'             position='00052' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TELNO_OLD'                   position='00056' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_2'                    position='00066' rawdatalength='00011' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ID_OLD'                      position='00077' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_ID'                     position='00078' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_DTE'                    position='00080' rawdatalength='00005' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CHKDGT'                      position='00085' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAYDTE'                      position='00087' rawdatalength='00004' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CUSTER_NO'                   position='00091' rawdatalength='00003' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ADMINIS_OFFICE'              position='00094' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SYSTEM_ID'                   position='00095' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAY_NBR'                     position='00096' rawdatalength='00007' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='REGION'                      position='00103' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CAR_BILL_NBR'                position='00107' rawdatalength='00021' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_3'                    position='00128' rawdatalength='00005' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC>
+  <REC_T>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_AMT'                   position='00002' rawdatalength='00013' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_CNT'                   position='00015' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER'                      position='00023' rawdatalength='00108' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_T>
+  <REC_R>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CARD_NBR'                    position='00002' rawdatalength='00016' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='AMOUNT'                      position='00018' rawdatalength='00009' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='OFFICE_CODE'                 position='00027' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TELNO'                       position='00031' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='IDCARD'                      position='00041' rawdatalength='00010' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_1'                    position='00051' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_ID        '             position='00052' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='BILL_YYMM'                   position='00054' rawdatalength='00005' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='CHKDGT'                      position='00059' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='PAYDATE'                     position='00061' rawdatalength='00004' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='UNPAID_CODE'                 position='00065' rawdatalength='00002' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='ADMINIS_OFFICE'              position='00067' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='SYSTEM_ID'                   position='00068' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER_2'                    position='00069' rawdatalength='00062' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_R>
+  <REC_RT>
+    <ITEM name='REC_TYPE'                    position='00001' rawdatalength='00001' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_AMT'                   position='00002' rawdatalength='00013' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_CNT'                   position='00015' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_AMT_REJECT'            position='00023' rawdatalength='00013' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='TOTAL_CNT_REJECT'            position='00036' rawdatalength='00008' numeric='true'  scaler='00' signed='false' align='' dateformat=''                    />
+    <ITEM name='FILLER'                      position='00044' rawdatalength='00087' numeric='false' scaler='00' signed='false' align='' dateformat=''                    />
+  </REC_RT>
+</PARKING_STMTIN>
+
