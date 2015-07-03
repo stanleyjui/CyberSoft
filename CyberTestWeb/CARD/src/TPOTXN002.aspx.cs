@@ -53,7 +53,7 @@ namespace CyberTestWeb.src
         }
         private void initData(int flag)
         {
-            try
+            try 
             {
                 if (flag == 0) //清除PnlContent
                 {
@@ -129,7 +129,7 @@ namespace CyberTestWeb.src
                 #endregion
                 //入帳日期
                 #region 入帳日期
-                DataTable SETUP_SYSTEM = (DataTable)System.Web.HttpContext.Current.Application["DataTableSYSTEM"];
+                DataTable SETUP_SYSTEM = (DataTable) Cybersoft.Data.CachePool.Cache.Get(CWACore.cacheKeySETUP_SYSTEM);
                 if (this.txtwherePOSTING_DTE_FR.Text == "")
                 {
                     this.txtwherePOSTING_DTE_FR.Text = Convert.ToDateTime(SETUP_SYSTEM.Rows[0]["NEXT_PROCESS_DTE"]).AddYears(-1).ToString("yyyy/MM/dd");

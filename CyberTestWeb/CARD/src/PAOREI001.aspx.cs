@@ -14,7 +14,7 @@ using CARDWeb.CARD.usercontrols;
 namespace CyberTestWeb.src
 {
 	/// <summary>
-	/// PAOREI001,續卡參數設定畫面
+	/// PAOREI001,續卡參數設定畫面 
 	/// </summary>
 	public partial class PAOREI001 : Cybersoft.Web.UI.LanguagePage
 	{

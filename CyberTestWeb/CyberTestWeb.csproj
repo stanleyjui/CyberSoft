@@ -65,9 +65,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\CyberSoft.Data.DAL.2.0.0.17\lib\Cybersoft.Dao.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Cybersoft.Data, Version=2.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Cybersoft.Data, Version=2.0.0.20, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CyberSoft.Data.2.0.0.19\lib\Cybersoft.Data.dll</HintPath>
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.20\lib\Cybersoft.Data.dll</HintPath>
     </Reference>
     <Reference Include="Cybersoft.Data.DAL, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -89,7 +89,7 @@
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CyberSoft.Data.2.0.0.19\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\packages\CyberSoft.Data.2.0.0.20\lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="iTextSharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
       <SpecificVersion>False</SpecificVersion>
@@ -1284,7 +1284,9 @@
     <Content Include="Site.Master" />
     <Content Include="CARD\src\TPOTXN002.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Site.Mobile.Master" />
@@ -1408,6 +1410,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="CARD\watermark\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
